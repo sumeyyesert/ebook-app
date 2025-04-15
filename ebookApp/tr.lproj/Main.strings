@@ -1,0 +1,69 @@
+
+/* Class = "UILabel"; text = "Trending Books"; ObjectID = "EGc-vG-fXZ"; */
+"EGc-vG-fXZ.text" = "Trend Kitaplar";
+
+/* Class = "UIButton"; configuration.title = "Crime"; ObjectID = "Gp2-VV-HDi"; */
+"Gp2-VV-HDi.configuration.title" = "Polisiye";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gp2-VV-HDi"; */
+"Gp2-VV-HDi.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Classics"; ObjectID = "Ljz-Hi-Qj2"; */
+"Ljz-Hi-Qj2.configuration.title" = "Klasikler";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Ljz-Hi-Qj2"; */
+"Ljz-Hi-Qj2.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Fantasy"; ObjectID = "YXs-t0-xZK"; */
+"YXs-t0-xZK.configuration.title" = "Fantastik";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YXs-t0-xZK"; */
+"YXs-t0-xZK.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Drama"; ObjectID = "Yq8-LT-E10"; */
+"Yq8-LT-E10.configuration.title" = "Drama";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Yq8-LT-E10"; */
+"Yq8-LT-E10.normalTitle" = "Button";
+
+/* Class = "UISearchBar"; placeholder = "Search for Books..."; ObjectID = "a5j-Bf-RDa"; */
+"a5j-Bf-RDa.placeholder" = "Kitap Ara...";
+
+/* Class = "UIButton"; configuration.title = "continue reading"; ObjectID = "asB-jb-3cv"; */
+"asB-jb-3cv.configuration.title" = "okumaya devam et";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "asB-jb-3cv"; */
+"asB-jb-3cv.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Currently Reading.."; ObjectID = "b2I-yx-czR"; */
+"b2I-yx-czR.text" = "Şu anda okunuyor..";
+
+/* Class = "UIButton"; configuration.title = "View all >>"; ObjectID = "bT6-iZ-K1O"; */
+"bT6-iZ-K1O.configuration.title" = "Tümünü görüntüle >>";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bT6-iZ-K1O"; */
+"bT6-iZ-K1O.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "24% completed"; ObjectID = "bcd-0w-hdl"; */
+"bcd-0w-hdl.text" = "%24 tamamlandı";
+
+/* Class = "UILabel"; text = "Categories"; ObjectID = "cV3-Ac-HiE"; */
+"cV3-Ac-HiE.text" = "Kategoriler";
+
+/* Class = "UIButton"; configuration.title = "Comics"; ObjectID = "e5W-2V-6Eb"; */
+"e5W-2V-6Eb.configuration.title" = "Çizgi Roman";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "e5W-2V-6Eb"; */
+"e5W-2V-6Eb.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Science"; ObjectID = "mja-nM-SjE"; */
+"mja-nM-SjE.configuration.title" = "Bilim";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mja-nM-SjE"; */
+"mja-nM-SjE.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "I, Robot"; ObjectID = "sDi-NH-Ifl"; */
+"sDi-NH-Ifl.text" = "Ben, Robot";
+
+/* Class = "UILabel"; text = "Isaac Asimov"; ObjectID = "yWB-rc-lbV"; */
+"yWB-rc-lbV.text" = "Isaac Asimov";

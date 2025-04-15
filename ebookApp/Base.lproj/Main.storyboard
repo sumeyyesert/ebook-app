@@ -1,24 +1,250 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TIo-BY-SK6">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ebookApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV3-Ac-HiE">
+                                <rect key="frame" x="16" y="234" width="128.33333333333334" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" name="anaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Books" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGc-vG-fXZ">
+                                <rect key="frame" x="16" y="624" width="180.66666666666666" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" name="anaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currently Reading.." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2I-yx-czR">
+                                <rect key="frame" x="16" y="382" width="223.66666666666666" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" name="anaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" placeholder="Search for Books..." translatesAutoresizingMaskIntoConstraints="NO" id="a5j-Bf-RDa">
+                                <rect key="frame" x="0.0" y="162" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="pKW-6L-h2W"/>
+                                </connections>
+                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT6-iZ-K1O">
+                                <rect key="frame" x="276.33333333333331" y="234" width="100.66666666666669" height="31.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="View all &gt;&gt;">
+                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                    <color key="baseForegroundColor" name="yaziRenk1"/>
+                                </buttonConfiguration>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="x6e-M1-LTi">
+                                <rect key="frame" x="16" y="281.33333333333331" width="361" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljz-Hi-Qj2">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Classics">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXs-t0-xZK">
+                                        <rect key="frame" x="123" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Fantasy">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-LT-E10">
+                                        <rect key="frame" x="246" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Drama">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Js6-Cr-5gS">
+                                <rect key="frame" x="16" y="331.66666666666669" width="361" height="34.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5W-2V-6Eb">
+                                        <rect key="frame" x="0.0" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Comics">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gp2-VV-HDi">
+                                        <rect key="frame" x="123" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crime">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mja-nM-SjE">
+                                        <rect key="frame" x="246" y="0.0" width="115" height="34.333333333333336"/>
+                                        <color key="backgroundColor" name="anaRenk"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Science">
+                                            <color key="baseForegroundColor" name="yaziRenk2"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iRobot" translatesAutoresizingMaskIntoConstraints="NO" id="qRL-6G-3tf">
+                                <rect key="frame" x="16" y="428" width="120" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="GzU-GP-WcP"/>
+                                    <constraint firstAttribute="width" constant="120" id="SUq-tS-edt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I, Robot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDi-NH-Ifl">
+                                <rect key="frame" x="152" y="428" width="75" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DcQ-ur-N7x">
+                                <rect key="frame" x="16" y="670" width="376" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crimeAndPunish" translatesAutoresizingMaskIntoConstraints="NO" id="Dw6-Jp-5gb">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="IoD-iD-wSd"/>
+                                            <constraint firstAttribute="width" constant="120" id="krs-3Y-dZM"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nausea" translatesAutoresizingMaskIntoConstraints="NO" id="OOu-ft-2DN">
+                                        <rect key="frame" x="128" y="0.0" width="120" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="eJM-1o-V7F"/>
+                                            <constraint firstAttribute="height" constant="180" id="zR3-Is-CXH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="theBellJar" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-4D-Rxv">
+                                        <rect key="frame" x="256" y="0.0" width="120" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="9ba-XC-Y8T"/>
+                                            <constraint firstAttribute="width" constant="120" id="ziU-jL-e4i"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isaac Asimov" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWB-rc-lbV">
+                                <rect key="frame" x="152" y="461.33333333333331" width="84.666666666666686" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asB-jb-3cv">
+                                <rect key="frame" x="152" y="538.66666666666663" width="176.66666666666663" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" image="plus.app" catalog="system" title="continue reading">
+                                    <color key="baseForegroundColor" name="yaziRenk1"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24% completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-0w-hdl">
+                                <rect key="frame" x="152" y="486.33333333333331" width="121" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="yaziRenk1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="EGc-vG-fXZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2IA-FI-9a6"/>
+                            <constraint firstItem="x6e-M1-LTi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4hH-H3-qlW"/>
+                            <constraint firstItem="bcd-0w-hdl" firstAttribute="leading" secondItem="qRL-6G-3tf" secondAttribute="trailing" constant="16" id="BZo-35-kBA"/>
+                            <constraint firstItem="asB-jb-3cv" firstAttribute="leading" secondItem="qRL-6G-3tf" secondAttribute="trailing" constant="16" id="C56-Eg-fde"/>
+                            <constraint firstItem="bT6-iZ-K1O" firstAttribute="top" secondItem="a5j-Bf-RDa" secondAttribute="bottom" constant="16" id="CEg-J7-5ae"/>
+                            <constraint firstItem="cV3-Ac-HiE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ENc-sK-QYW"/>
+                            <constraint firstItem="DcQ-ur-N7x" firstAttribute="top" secondItem="EGc-vG-fXZ" secondAttribute="bottom" constant="16" id="GUt-9P-k5S"/>
+                            <constraint firstItem="b2I-yx-czR" firstAttribute="top" secondItem="Js6-Cr-5gS" secondAttribute="bottom" constant="16" id="Kbh-1b-0nd"/>
+                            <constraint firstItem="sDi-NH-Ifl" firstAttribute="leading" secondItem="qRL-6G-3tf" secondAttribute="trailing" constant="16" id="Ko9-Eh-Cet"/>
+                            <constraint firstItem="qRL-6G-3tf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LIo-Ho-34X"/>
+                            <constraint firstItem="bcd-0w-hdl" firstAttribute="top" secondItem="yWB-rc-lbV" secondAttribute="bottom" constant="8" id="ON8-LH-nV0"/>
+                            <constraint firstItem="a5j-Bf-RDa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OXQ-Rd-pVp"/>
+                            <constraint firstItem="EGc-vG-fXZ" firstAttribute="top" secondItem="qRL-6G-3tf" secondAttribute="bottom" constant="16" id="QvL-bu-8OY"/>
+                            <constraint firstItem="Js6-Cr-5gS" firstAttribute="top" secondItem="x6e-M1-LTi" secondAttribute="bottom" constant="16" id="U2T-OA-WGY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bT6-iZ-K1O" secondAttribute="trailing" constant="16" id="U7S-i6-t0B"/>
+                            <constraint firstItem="x6e-M1-LTi" firstAttribute="top" secondItem="bT6-iZ-K1O" secondAttribute="bottom" constant="16" id="Vuz-Id-saz"/>
+                            <constraint firstItem="DcQ-ur-N7x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YGo-ue-Kat"/>
+                            <constraint firstItem="yWB-rc-lbV" firstAttribute="leading" secondItem="qRL-6G-3tf" secondAttribute="trailing" constant="16" id="ZLp-XC-WDF"/>
+                            <constraint firstItem="asB-jb-3cv" firstAttribute="top" secondItem="bcd-0w-hdl" secondAttribute="bottom" constant="32" id="aOd-33-O2m"/>
+                            <constraint firstItem="b2I-yx-czR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bNW-hy-doa"/>
+                            <constraint firstItem="x6e-M1-LTi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWA-94-g52"/>
+                            <constraint firstItem="a5j-Bf-RDa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g8S-T6-cbJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Js6-Cr-5gS" secondAttribute="trailing" constant="16" id="iIy-Mm-2TO"/>
+                            <constraint firstAttribute="trailing" secondItem="a5j-Bf-RDa" secondAttribute="trailing" id="nPZ-5f-wVT"/>
+                            <constraint firstItem="sDi-NH-Ifl" firstAttribute="top" secondItem="b2I-yx-czR" secondAttribute="bottom" constant="16" id="rJf-ji-qrV"/>
+                            <constraint firstItem="Js6-Cr-5gS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s7V-Pa-8Gf"/>
+                            <constraint firstItem="yWB-rc-lbV" firstAttribute="top" secondItem="sDi-NH-Ifl" secondAttribute="bottom" constant="8" id="t8C-3F-cmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x6e-M1-LTi" secondAttribute="trailing" constant="16" id="uvA-sh-QXe"/>
+                            <constraint firstItem="qRL-6G-3tf" firstAttribute="top" secondItem="b2I-yx-czR" secondAttribute="bottom" constant="16" id="wRW-05-0s9"/>
+                            <constraint firstItem="Js6-Cr-5gS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xCT-7M-eMd"/>
+                            <constraint firstItem="cV3-Ac-HiE" firstAttribute="top" secondItem="a5j-Bf-RDa" secondAttribute="bottom" constant="16" id="xfk-ya-dxe"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ITs-yj-YaA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="993.12977099236639" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7cH-pq-uKq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TIo-BY-SK6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lqp-YX-KCd">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Psq-qJ-5Vl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zz-qH-TpK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.412213740458014" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crimeAndPunish" width="367.5" height="550.5"/>
+        <image name="iRobot" width="243.5" height="400"/>
+        <image name="nausea" width="368" height="575"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="theBellJar" width="326" height="500"/>
+        <namedColor name="anaRenk">
+            <color red="0.41200000047683716" green="0.45100000500679016" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk1">
+            <color red="0.25099998712539673" green="0.16500000655651093" blue="0.090000003576278687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="yaziRenk2">
+            <color red="0.94900000095367432" green="0.83099997043609619" blue="0.60799998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
